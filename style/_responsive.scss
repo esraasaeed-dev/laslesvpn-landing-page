@@ -1,0 +1,370 @@
+@use "variables" as *;
+
+/* ===== START: Responsive — Laptop (max-width: 1024px) ===== */
+@media (max-width: 1024px) {
+  .header__inner,
+  .container,
+  .footer {
+    padding-left: 5rem;
+    padding-right: 5rem;
+  }
+
+  .header {
+    &__inner {
+      gap: 7rem;
+    }
+
+    .links {
+      gap: 2.5rem;
+    }
+
+    .signButton {
+      margin-left: 7rem;
+      gap: 2rem;
+
+      &__signUp {
+        padding: 1.1rem 3rem;
+      }
+    }
+  }
+
+  .section {
+    &--features {
+      gap: 6rem;
+      margin-left: 4rem;
+
+      .section__content {
+        margin-right: 0;
+      }
+    }
+
+    &--hero {
+      .section__title {
+        font-size: 4.2rem;
+
+        span {
+          font-size: 4.2rem;
+        }
+      }
+    }
+  }
+  .cards-top .card:nth-child(2) {
+    padding: 0 5.5rem;
+  }
+
+  .cards--plans {
+    gap: 2.5rem;
+    flex-wrap: wrap;
+  }
+
+  .cards__card--plan {
+    min-width: 280px;
+    padding: 5rem 3.5rem 4rem;
+
+    .card__mid {
+      padding-bottom: 12rem;
+    }
+
+    .card__bottom .card__button {
+      padding: 1.2rem 4rem;
+    }
+  }
+
+  .cards--testimonials {
+    .cards__card--Customer {
+      flex: 0 0 350px;
+    }
+  }
+
+  .footer {
+    &__content {
+      gap: 6rem;
+    }
+
+    &__links-wrapper {
+      gap: 6rem;
+    }
+  }
+}
+/* ===== END: Responsive — Laptop ===== */
+
+/* ===== START: Responsive — Tablet (max-width: 768px) ===== */
+@media (max-width: $breakpoint-tablet) {
+  .header__inner,
+  .container,
+  .footer {
+    padding-left: 4rem;
+    padding-right: 4rem;
+  }
+
+  .header {
+    .hamburger {
+      display: block;
+    }
+
+    .links {
+      position: absolute;
+      top: 100%;
+      right: 4rem;
+      background: var(--color-white);
+      flex-direction: column;
+      align-items: flex-start;
+      padding: 3rem;
+      gap: 2rem;
+      border-radius: 0 0 var(--radius-sm) var(--radius-sm);
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+      min-width: 25rem;
+      opacity: 0;
+      visibility: hidden;
+      transform: translateY(-10px);
+      transition: var(--transition-normal);
+      z-index: 1;
+
+      &__link::before {
+        display: none;
+      }
+    }
+
+    .header__inner {
+      position: relative;
+    }
+
+    .menu-toggle:checked ~ .links {
+      opacity: 1;
+      visibility: visible;
+      transform: translateY(0);
+    }
+
+    .signButton {
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 1.5rem;
+      margin-left: 0;
+      padding-top: 2rem;
+      border-top: 1px solid var(--color-border-light);
+      width: 100%;
+    }
+  }
+
+  .section {
+    grid-template-columns: 1fr;
+    gap: 4rem;
+    text-align: center;
+
+    &__content,
+    &__image {
+      justify-self: center;
+      margin-left: 0;
+      margin-right: 0;
+    }
+
+    &__title,
+    &__description {
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    &__buttons {
+      justify-content: center;
+    }
+
+    &__button {
+      margin-bottom: 2rem;
+    }
+
+    &--features {
+      grid-template-columns: 1fr;
+      margin-left: 0;
+      .section__content {
+        margin-right: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+      .section__features {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+
+    &--hero .section__image {
+      margin-left: 0;
+    }
+
+    &--subscribe {
+      flex-direction: column;
+      text-align: center;
+      gap: 2rem;
+      padding: 4rem 0;
+
+      .section__title {
+        text-align: center;
+      }
+    }
+  }
+
+  .cards-top {
+    gap: 2rem;
+    padding: 4rem;
+
+    .card:nth-child(2) {
+      padding: 0 3rem;
+      height: 8rem;
+    }
+  }
+
+  .box-plan-huge {
+    .cards--plans {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+  }
+
+  .cards__card--plan {
+    width: 100%;
+    max-width: 400px;
+  }
+
+  .cards--testimonials {
+    gap: 3rem;
+
+    .cards__card--Customer {
+      scroll-margin-top: 10rem;
+    }
+  }
+
+  .partners-logos {
+    justify-content: center;
+    gap: 4rem;
+  }
+
+  .footer {
+    padding-top: 20rem;
+
+    &__content {
+      flex-wrap: wrap;
+      gap: 5rem;
+    }
+
+    &__links-wrapper {
+      gap: 4rem;
+      justify-content: space-between;
+      width: 100%;
+    }
+  }
+}
+/* ===== END: Responsive — Tablet ===== */
+
+/* ===== START: Responsive — Mobile (max-width: 480px) ===== */
+@media (max-width: $breakpoint-mobile) {
+  .header__inner,
+  .container,
+  .footer {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+
+  .header {
+    margin-top: 3rem;
+
+    .links {
+      right: 2rem;
+      left: 2rem;
+    }
+
+    .content {
+      font-size: var(--font-size-base-rem);
+    }
+  }
+
+  .section {
+    &--hero {
+      margin-top: 4rem;
+
+      .section__title {
+        font-size: 2.8rem;
+
+        span {
+          font-size: 2.8rem;
+        }
+      }
+    }
+    .section__features {
+      display: flex;
+      flex-direction: column;
+    }
+
+    &__title {
+      font-size: 2.8rem;
+    }
+
+    &__button {
+      padding: 1.4rem 4rem;
+      margin-bottom: 2rem;
+    }
+  }
+
+  .cards-top {
+    flex-direction: column;
+    gap: 2rem;
+    padding: 4rem;
+    box-shadow: 0 10rem 20rem rgba(0, 0, 0, 0.1);
+
+    .card {
+      padding: 0;
+      margin: 0;
+
+      &:nth-child(2) {
+        border-right: none;
+        border-left: none;
+        border-top: 2px solid var(--color-border-light);
+        border-bottom: 2px solid var(--color-border-light);
+        padding: 5rem 2rem;
+        margin-left: 2rem;
+      }
+    }
+  }
+
+  .cards__card--plan {
+    padding: 4rem 2rem;
+
+    .card__bottom .card__button {
+      padding: 1.2rem 5rem;
+    }
+  }
+
+  .cards--testimonials {
+    gap: 2rem;
+
+    .cards__card--Customer {
+      flex: 0 0 320px;
+      scroll-margin-top: 5rem;
+    }
+  }
+
+  .partners-logos {
+    .partners-logo {
+      width: 10rem;
+    }
+  }
+
+  .testimonials-controls {
+    flex-direction: column;
+    gap: 4rem;
+  }
+
+  .footer {
+
+    &__content {
+      padding: 0 2rem;
+      gap: 5rem;
+    }
+
+    &__links-wrapper {
+      flex-wrap: wrap;
+      gap: 3rem;
+    }
+  }
+}
+/* ===== END: Responsive — Mobile ===== */

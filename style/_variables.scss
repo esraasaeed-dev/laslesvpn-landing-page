@@ -1,0 +1,39 @@
+$breakpoint-tablet: 768px;
+$breakpoint-mobile: 480px;
+$breakpoint-laptop: 1024px;
+
+:root {
+  --font-family: "Rubik", sans-serif;
+  --font-weight-400: 400;
+  --font-weight-500: 500;
+  --font-weight-700: 700;
+
+  --font-size-xs: 1.4rem;
+  --font-size-sm: 1.6rem;
+  --font-size-md: 1.8rem;
+  --font-size-lg: 2.0rem;
+  --font-size-xl: 2.5rem;
+  --font-size-2xl: 3.5rem;
+  --font-size-hero: 5.0rem;
+  --font-size-base-rem: 1.6rem;
+
+  --color-gray-blue: #4f5665;
+  --color-dark-navy: #0b132a;
+  --color-coral-red: #f53838;
+  --color-pink-light: #ffecec;
+  --color-white: #ffffff;
+  --color-bg-light: #f8f8f8;
+  --color-border-light: #eeeff2;
+  --color-border-gray: #dddddd;
+  --color-dot-gray: #dde0e4;
+  --color-copyright: #afb5c0;
+
+  --default-border: 2px solid var(--color-border-gray);
+  --radius-sm: 10px;
+  --radius-pill: 50px;
+
+  --default-padding: 10rem;
+
+  --timing-animation: 0.3s;
+  --transition-normal: all var(--timing-animation) ease;
+}
