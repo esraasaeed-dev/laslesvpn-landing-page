@@ -29,7 +29,7 @@ A responsive landing page for LaslesVPN, built with HTML and SCSS based on a Fig
 
 ## Live Demo
 
-[View Live Demo](ADD_LIVE_DEMO_URL)
+[View Live Demo](https://esraasaeed-dev.github.io/laslesvpn-landing-page/)
 
 
 ## Learning Context
