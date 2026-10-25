@@ -951,7 +951,7 @@ html:has(#subscribe:target) .links__help {
     justify-content: center;
   }
   .section__button {
-    margin-bottom: 3rem;
+    margin-bottom: 5rem;
   }
   .section__button::before {
     width: 21.183rem;
@@ -1075,7 +1075,6 @@ html:has(#subscribe:target) .links__help {
     flex-direction: column;
     gap: 2rem;
     padding: 4rem;
-    box-shadow: 0 10rem 20rem rgba(0, 0, 0, 0.1);
   }
   .cards-top .card {
     padding: 0;
