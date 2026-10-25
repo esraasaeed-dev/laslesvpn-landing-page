@@ -1,0 +1,119 @@
+
+.footer {
+  padding: 18rem calc(var(--default-padding) + 5rem) 10rem;
+  background-color: var(--color-bg-light);
+  width: 100%;
+
+  &__content {
+    display: flex;
+    align-items: start;
+    justify-content: space-between;
+    margin: 0 auto;
+    gap: 23rem;
+  }
+
+  &__info {
+    display: flex;
+    flex-direction: column;
+    max-width: 340px;
+  }
+
+  &__logo-content {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 2rem;
+  }
+
+  &__title {
+    font-size: 2rem;
+    font-weight: var(--font-weight-500);
+
+    span {
+      font-weight: var(--font-weight-700);
+    }
+  }
+
+  &__description {
+    font-size: var(--font-size-base-rem);
+    color: var(--color-gray-blue);
+    line-height: 1.6;
+    margin-bottom: 3rem;
+    font-weight: var(--font-weight-400);
+
+    span {
+      font-weight: var(--font-weight-500);
+    }
+  }
+
+  &__socials {
+    display: flex;
+    gap: 1.5rem;
+    margin-bottom: 3rem;
+  }
+
+  &__social-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 3.36rem;
+    height: 3.36rem;
+    background-color: var(--color-coral-red);
+    border-radius: 50%;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+    transition: var(--transition-normal);
+
+    &:hover {
+      transform: translateY(-3px);
+    }
+
+    img {
+      max-width: 3.56rem;
+      height: 3.56rem;
+    }
+  }
+
+  &__copyright {
+    font-size: var(--font-size-base-rem);
+    color: var(--color-copyright);
+    font-weight: var(--font-weight-400);
+
+    span {
+      font-weight: var(--font-weight-500);
+    }
+  }
+
+  &__links-wrapper {
+    display: flex;
+    gap: 12.6rem;
+  }
+
+  &__links-column {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__links-title {
+    font-size: 1.8rem;
+    font-weight: var(--font-weight-500);
+    color: var(--color-dark-navy);
+    margin-bottom: 2rem;
+  }
+
+  &__links-list {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+
+  &__link {
+    font-size: var(--font-size-base-rem);
+    color: var(--color-gray-blue);
+    transition: var(--transition-normal);
+
+    &:hover {
+      color: var(--color-coral-red);
+      transform: translateY(-5px);
+    }
+  }
+}
